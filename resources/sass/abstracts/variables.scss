@@ -1,0 +1,80 @@
+$text: #101010;
+$text-dark: #fff;
+
+$text-light: #4a4a4a;
+$text-light-dark: #b0b0b0;
+
+$primary: #002f53;
+$primary-dark: #2b4c69;
+
+$primary-light: #003c6b;
+$primary-light-dark: #557fa3;
+
+$graph-background: #EDF6FF;
+$graph-background-dark: #363D45;
+
+$background: #EDEEF1;
+$background-dark: #181c21;
+
+$base: #fff;
+$base-dark: #24292f;
+
+$input: #d4dce1;
+$input-dark: #363d45;
+
+$accent: #004e89;
+$accent-dark: #304b77;
+
+$font: #242424;
+$font-dark: #92aaad;
+
+$accent-font: #353535;
+$accent-font-dark: #bacddb;
+
+$link: #1162b8;
+$link-dark: #6fa9e7;
+
+// radius
+
+$small-radius: 3px;
+$main-radius: 5px;
+
+
+:root {
+    --text: #{$text};
+    --text-light: #{$text-light};
+    --primary: #{$primary};
+    --primary-light: #{$primary-light};
+    --background: #{$background};
+    --base: #{$base};
+    --font: #{$font};
+    --accent-font: #{$accent-font};
+    --input: #{$input};
+    --accent: #{$accent};
+    --table: #{$input};
+    --graph-background: #{$graph-background};
+    --link: #{$link};
+  }
+  
+  .dark {
+    --text: #{$text-dark};
+    --text-light: #{$text-light-dark};
+    --primary: #{$primary-dark};
+    --primary-light: #{$primary-light-dark};
+    --background: #{$background-dark};
+    --base: #{$base-dark};
+    --font: #{$font-dark}; //remove
+    --accent-font: #{$accent-font-dark}; //remove
+    --input: #{$input-dark}; //remove
+    --accent: #{$accent-dark}; //remove
+    --table: #{#363d45}; //remove
+    --graph-background: #{$graph-background-dark};
+    --link: #{$link-dark};
+    svg > defs > linearGradient > stop:nth-of-type(2n) {
+      stop-color: #1e2730;
+    }
+  
+    svg > defs > linearGradient > stop:nth-of-type(2n + 1) {
+      stop-color: #2d3641;
+    }
+  }

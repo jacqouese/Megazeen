@@ -1,0 +1,13 @@
+.loading-dots-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.loading-dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--text);
+  border-radius: 3px;
+}
